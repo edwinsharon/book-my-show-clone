@@ -1,0 +1,51 @@
+
+.bmsicon{
+    height: 10%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav div{
+     justify-content:flex-end;
+    justify-content: space-between;
+}
+
+.carousel{
+    
+    overflow: hidden;
+
+}
+.prob{
+    padding: 0;
+    height: 0;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+}
+.movielist{
+    display: flex;
+    flex-direction: row;
+
+}
+.iconend{
+    margin-left: 30%;
+}
+.bannermain{
+    margin-top: -60%;
+}
+.footerlist a{
+    text-decoration: none;
+    color: white;
+}
+.footerlist a:hover{
+    color: blue;
+}
+.abt{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.createbody{
+    background-image: url();
+}

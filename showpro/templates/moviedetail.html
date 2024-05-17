@@ -1,0 +1,123 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .mvdetbanner{
+            background-image: url("{% static '/images/avehsam.avif' %}" );
+            margin-top: -35%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header container mt-3" >
+        <div class="row">
+            <div class="col-1 ">
+              <img src="{% static 'images/bmsicon.png' %}" alt="bmsicon" class="bmsicon">
+            </div>
+            <div class="col-5 ">  
+             <input type="search" name="moviesearch" id="moviesearch" class="w-75 rounded-pill" placeholder="movies">
+             <i class="bi bi-search"></i>
+            </div>
+            
+            <div class="col-1">
+               <h3>Kochi</h3>
+            </div>
+            <div class="col-2">
+                <a href=""><button class=" btn btn-danger ">add movies</button></a>
+            </div>
+            <div class="col-1 prob">
+                <a href=""><button class=" btn btn-primary ">log in</button></a>
+              </div> 
+            <div class="col-2">
+                <i class="bi bi-list"></i>
+            </div>
+       </div>
+     </div>
+      <div class="container-fluid mvdetbanner">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <img src="{% static '/images/images.jpeg' %}" alt="" class=" abt p-3 mt-3 bg-body rounded">
+                </div>
+                <div class="col-8 mt-5 text-light ">
+                    <div class="row">
+                      <h1 class="text-light ">Avehsam</h1>
+                    </div>
+                    <div class="row mt-5">
+                       <button class="btn btn-secondary w-25  rounded abt">6.9 14.2k votes</button>
+                       
+                    </div>
+                    <div class="row mt-3">
+                        <button class="btn btn-light w-25  rounded abt">2d</button>
+                        <button class="btn btn-light w-25  rounded ms-2 abt">Malayalam</button>
+                    </div>
+                    <div class="row">
+                        <span>2:30 . Action, Comedy . UA.11 april 2024</span>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-danger w-25  rounded  mt-2 abt">delete</button>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="container mt-2 rounded" style="height: 20%;" class="bmsbanner">
+        <img src="{% static '/images/bmsbanner.png' %}" alt="" width="100%">
+    </div>
+      <div class="bg-dark text-light mt-4">
+        <div class="container">
+          <div class="bg-secondary">
+            <div class="row">
+              <div class="col-lg-4">
+                <i class="bi bi-person-lines-fill ms-5 "></i>
+               <P class="ms-2"> CONTACT US 24x7</P>
+              </div>
+              <div class="col-lg-4">
+                <i class="bi bi-ticket-perforated-fill ms-5 "></i>
+               <P class="ms-2">BOOKING CONFIRMATION</P>
+              </div>
+              <div class="col-lg-4 " >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper ms-5" viewBox="0 0 16 16" >
+                  <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
+                </svg>
+                <P class="ms-2">SUBSCRIBE NEWSLETTER</P>
+              </div>
+            </div>
+          </div>
+          <div class="footer pb-5 ">
+          <ul>
+           <li class="footerlist text-light  m-2 ps-2 border-secondary"><a href=""> MOVIES NOW SHOWING IN KOCHI</a></li>
+           
+           <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">UPCOMING MOVIES IN KOCHI</a></li>
+           <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">MOVIES BY GENRE</a></li>
+           <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">MOVIES BY LANGUAGE</a></li>
+           <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">HELP</a></li>
+           <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">COUNTRIES</a></li>
+          <li class="footerlist text-light  m-2 ps-2 border-secondary "><a href="">IPL 2024</a></li>
+           
+          </ul>
+  
+          </div>
+  
+        </div>
+  </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>
